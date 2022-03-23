@@ -65,8 +65,8 @@ export default function Banner() {
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Laurence Daisy Floriani
                     </Typography>
-                    <a href="/LaurenceDaisyFloriani.pdf" download>
-                        <img src={"logo_cv.png"} alt="logo" className="logo-medium" height={50}/>
+                    <a href={"/LaurenceDaisyFloriani.pdf"} download>
+                        <img src={"logo_cv.png"} alt="logo-cv" className="logo-cv" height={50}/>
                     </a>
                 </Toolbar>
             </AppBar>

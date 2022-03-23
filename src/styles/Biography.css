@@ -1,0 +1,14 @@
+.profil {
+    border-radius: 50%;
+    border: 5px solid #464646;
+    padding: 5px;
+    width: 250px;
+}
+
+.bio-container {
+    display: flex;
+}
+
+.welcome-text {
+    padding: 50px;
+}
