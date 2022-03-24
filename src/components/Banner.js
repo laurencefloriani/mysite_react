@@ -65,6 +65,11 @@ export default function Banner() {
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Laurence Daisy Floriani
                     </Typography>
+                    <Typography variant="h6" align="right" component="div" sx={{flexGrow: 1, marginRight: 1}} >
+                        Voyez mon CV
+                        <img src={"right_arrow.png"} width={50} height={20} alt="right_arrow"/>
+                    </Typography>
+
                     <a href={"/LaurenceDaisyFloriani.pdf"} download>
                         <img src={"logo_cv.png"} alt="logo-cv" className="logo-cv" height={50}/>
                     </a>
