@@ -1,9 +1,8 @@
 import Banner from "./Banner";
 
-
-export default function Projects() {
+export default function Contact() {
     return (
-        <div className="projects-container" >
+        <div className="contact-container" >
             <Banner home={false}/>
         </div>
     )

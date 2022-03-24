@@ -3,14 +3,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+import {FiHome} from "react-icons/fi";
+import {Text} from "react-native-web";
+import { IconContext } from "react-icons";
 
 const options = [
-    'Projects',
+    'Éducation',
+    'Experience',
+    'Activités',
+    'Projets',
+    'Contact',
 ];
 
 const ITEM_HEIGHT = 48;
 
-export default function Banner() {
+export default function Banner(props) {
     let navigate = useNavigate();
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -20,8 +27,22 @@ export default function Banner() {
     };
 
     const handleClose = (event) => {
-        if(event.target.innerText === "Projects") {
-            navigate("/projects", {replace: true});
+        switch (event.target.innerText) {
+            case 'Éducation':
+                navigate("/education", {replace: true});
+                break;
+            case 'Experience':
+                navigate("/experience", {replace: true});
+                break;
+            case 'Activités':
+                navigate("/activities", {replace: true});
+                break;
+            case 'Projets':
+                navigate("/projects", {replace: true});
+                break;
+            case 'Contact':
+                navigate("/contact", {replace: true});
+
         }
         setAnchorEl(null);
     };
@@ -65,14 +86,26 @@ export default function Banner() {
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Laurence Daisy Floriani
                     </Typography>
-                    <Typography variant="h6" align="right" component="div" sx={{flexGrow: 1, marginRight: 1}} >
-                        Voyez mon CV
-                        <img src={"right_arrow.png"} width={50} height={20} alt="right_arrow"/>
-                    </Typography>
-
-                    <a href={"/LaurenceDaisyFloriani.pdf"} download>
-                        <img src={"logo_cv.png"} alt="logo-cv" className="logo-cv" height={50}/>
-                    </a>
+                    {props.home ?
+                        <>
+                            <Typography variant="h6" align="right" component="div" sx={{flexGrow: 1, marginRight: 1}} >
+                                Voyez mon CV
+                                <img src={"right_arrow.png"} width={50} height={20} alt="right_arrow"/>
+                            </Typography>
+                            <a href={"/LaurenceDaisyFloriani.pdf"} download>
+                                <img src={"logo_cv.png"} alt="logo-cv" className="logo-cv" height={50}/>
+                            </a>
+                        </>:
+                        <button onClick={() => navigate("/")} >
+                            <Text style={{fontSize: 45}}>
+                                <IconContext.Provider
+                                    value={{ color: 'black' }}
+                                >
+                                <FiHome />
+                                </IconContext.Provider>
+                            </Text>
+                        </button>
+                    }
                 </Toolbar>
             </AppBar>
         </Box>
