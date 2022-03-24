@@ -7,12 +7,12 @@ import Banner from "./Banner";
 export default function Education() {
     return (
         <div className="education-container" >
-            <Banner home={false}/>
+            <Banner isHome={false}/>
             <SectionTitle title="Éducation" />
             <br/>
             {
                 EDUCATIONS.map((educ) => {
-                    return <Section title={educ.level} appendix={educ.years} description={educ.description} />
+                    return <Section title={educ.level} appendix={educ.years} description={educ.description} img={educ.img} />
                 })
             }
         </div>

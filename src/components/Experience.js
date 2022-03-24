@@ -6,12 +6,12 @@ import Section from "./Section";
 export default function Experience() {
     return (
         <div className="experience-container" >
-            <Banner home={false}/>
+            <Banner isHome={false}/>
             <SectionTitle title="Expériences" />
             <br/>
             {
                 EXPERIENCES.map((exp) => {
-                    return <Section title={exp.post} appendix={exp.years} description={exp.description}/>
+                    return <Section title={exp.post} appendix={exp.years} description={exp.description} img={exp.img} />;
                 })
             }
         </div>

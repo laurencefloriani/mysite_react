@@ -5,7 +5,7 @@ import Biography from "./Biography";
 export default function App() {
     return (
         <div className="app-container" >
-            <Banner home={true}/>
+            <Banner isHome={true}/>
             <br/>
             <Biography />
         </div>

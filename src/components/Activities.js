@@ -13,7 +13,7 @@ export default function Activities() {
             <br/>
             {
                 VOLUNTEERWORKS.map((vol) => {
-                    return <Section title={vol.post} appendix={vol.years} description={vol.description} />
+                    return <Section title={vol.post} appendix={vol.years} description={vol.description} img={vol.img}/>
                 })
             }
             <br/>
@@ -21,7 +21,7 @@ export default function Activities() {
             <br/>
             {
                 ACTIVITIES.map((act) => {
-                    return <Section title={act.name} appendix={act.years} description={act.description} />
+                    return <Section title={act.name} appendix={act.years} description={act.description} img={act.img}/>
                 })
             }
         </div>

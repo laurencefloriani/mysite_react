@@ -86,7 +86,7 @@ export default function Banner(props) {
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         Laurence Daisy Floriani
                     </Typography>
-                    {props.home ?
+                    {props.isHome ?
                         <>
                             <Typography variant="h6" align="right" component="div" sx={{flexGrow: 1, marginRight: 1}} >
                                 Voyez mon CV
