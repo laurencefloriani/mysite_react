@@ -7,7 +7,6 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Activities from "./components/Activities";
-import Contact from "./components/Contact";
 
 const rootElement = document.getElementById('root');
 
@@ -19,7 +18,6 @@ ReactDOM.render(
             <Route path="/experience" element={<Experience />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
         </Routes>
     </BrowserRouter>,
     rootElement

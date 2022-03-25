@@ -9,10 +9,9 @@ import { IconContext } from "react-icons";
 
 const options = [
     'Éducation',
-    'Experience',
+    'Expérience',
     'Activités',
     'Projets',
-    'Contact',
 ];
 
 const ITEM_HEIGHT = 48;
@@ -40,9 +39,6 @@ export default function Banner(props) {
             case 'Projets':
                 navigate("/projects", {replace: true});
                 break;
-            case 'Contact':
-                navigate("/contact", {replace: true});
-
         }
         setAnchorEl(null);
     };

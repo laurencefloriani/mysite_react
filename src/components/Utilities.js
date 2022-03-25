@@ -61,3 +61,63 @@ export const ACTIVITIES = [
         img: "cybersecurityBelgium.png"
     }
 ]
+
+export const PROJECTS = [
+    {
+        name: "Interface utilisateur WEB pour le serveur PHOEG",
+        years: "2022",
+        url: "https://github.com/laurencefloriani/phoeg-react",
+        langages: ["JavaScript", "CSS", "React"],
+        description: "À écrire ...",
+        img: "phoeg.png"
+    },
+    {
+        name: "Générateur nombre aléatoire",
+        years: "2021",
+        url: "https://github.com/laurencefloriani/simulation",
+        langages: ["Python"],
+        description: "À écrire ...",
+        img: "random.png"
+    },
+    {
+        name: "Compilateur Dumbo",
+        years: "2021",
+        url: "https://github.com/laurencefloriani/compilation",
+        langages: ["Python"],
+        description: "À écrire ...",
+        img: "dumbo.png"
+    },
+    {
+        name: "Séquenceur ADN",
+        years: "2020",
+        url: "https://github.com/laurencefloriani/ProjetBioInfo",
+        langages: ["Java"],
+        description: "À écrire ...",
+        img: "adn.png"
+    },
+    {
+        name: "Extraction de communautés à partir de grands réseaux",
+        years: "2019",
+        url: "https://github.com/laurencefloriani/OptiCombProjet",
+        langages: ["Java"],
+        description: "À écrire ...",
+        img: "network.png"
+    },
+    {
+        name: "Création d'un jeu inspiré de Slay",
+        years: "2019",
+        url: "https://github.com/lavendthomas/Slay",
+        langages: ["Java", "LibGDX"],
+        description: "À écrire ...",
+        img: "slay.png"
+    },
+    {
+        name: "Convertisseur d'algèbre relationnelle en requête SQL",
+        years: "2018",
+        url: "https://github.com/laurencefloriani/projetBase",
+        langages: ["Python", "SQLite3"],
+        description: "À écrire ...",
+        img: "sql.png"
+    },
+
+]
