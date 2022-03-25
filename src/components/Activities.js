@@ -8,7 +8,6 @@ export default function Activities() {
     return (
         <div className="activities-container" >
             <Banner home={false}/>
-            <br/>
             <SectionTitle title="Bénévolats" />
             <br/>
             {
