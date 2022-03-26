@@ -11,7 +11,7 @@ import Activities from "./components/Activities";
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/education" element={<Education />} />
