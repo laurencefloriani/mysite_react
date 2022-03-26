@@ -1,14 +1,12 @@
-import {Text, View} from "react-native";
+import {View} from "react-native";
+import SubTitleText from "./SubTitleText";
 
 
 export default function SectionSubTitle(props) {
     return (
         <View style={{flexDirection: 'row', alignItems: 'left'}}>
             <View>
-                <Text style={{
-                    fontSize: 25,
-                    fontWeight: 'bold'
-                }}> {props.title} </Text>
+                <SubTitleText>{props.title} </SubTitleText>
             </View>
             <View style={{
                 flex: 1,
@@ -16,9 +14,7 @@ export default function SectionSubTitle(props) {
                 backgroundColor: "#464646"
             }} />
             <View>
-                <Text style={{
-                    fontSize: 25,
-                }}> {props.appendix} </Text>
+                <SubTitleText> {props.appendix}</SubTitleText>
             </View>
         </View>
     );

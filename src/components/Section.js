@@ -1,6 +1,6 @@
-import {Text} from "react-native";
 import SectionSubTitle from "./SectionSubTitle";
-import {Grid} from "@mui/material";
+import {View} from "react-native-web";
+import InnerText from "./InnerText";
 
 export default function Section(props) {
 
@@ -8,15 +8,14 @@ export default function Section(props) {
         <div>
             <SectionSubTitle title={props.title} appendix={props.appendix}/>
             <br />
-            <Grid container style={{paddingLeft: 50, paddingRight: 250}} spacing={10}>
-                <Grid item style={{ display: "flex", alignItems: "center" }}>
+            <View style={{flexDirection: 'row', alignItems: 'left'}}>
+                <View>
                     <img src={props.img} alt={props.img} style={{width: 150, height: 150}}/>
-                </Grid>
-                <Grid item style={{ display: "flex", alignItems: "center" }}>
-                    <Text style={{ fontSize: 20, }}>{props.description}</Text>
-                </Grid>
-            </Grid>
-            <br/>
+                </View>
+                <View style={{paddingLeft: 20, justifyContent: 'center', flex: 1}}>
+                    <InnerText isCode={false}>{props.description}</InnerText>
+                </View>
+            </View>
         </div>
     )
 

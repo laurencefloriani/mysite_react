@@ -1,30 +1,28 @@
 import SectionSubTitle from "./SectionSubTitle";
-import {Grid} from "@mui/material";
-import {Text} from "react-native";
 import {View} from "react-native-web";
+import InnerText from "./InnerText";
 
 export default function Project(props) {
-
     return (
         <div>
             <SectionSubTitle title={props.name} appendix={props.years}/>
             <br />
             <View>
                 {props.langages.map((lang) => {
-                    return <Text style={{fontSize: 20, fontStyle: 'italic', color: 'blue', fontWeight: 'bold', textAlign: 'center'}}>{lang} </Text>;
+                    return <InnerText isCode={true}>{lang} </InnerText>;
                 })}
             </View>
             <br />
-            <Grid container style={{paddingLeft: 50, paddingRight: 250}} spacing={10}>
-                <Grid item style={{ display: "flex", alignItems: "center" }}>
+            <View style={{flexDirection: 'row', alignItems: 'left'}}>
+                <View>
                     <a href={props.url}>
                         <img src={props.img} alt={props.img} style={{width: 150, height: 150}}/>
                     </a>
-                </Grid>
-                <Grid item style={{ display: "flex", alignItems: "center" }}>
-                    <Text style={{ fontSize: 20, }}>{props.description}</Text>
-                </Grid>
-            </Grid>
+                </View>
+                <View style={{paddingLeft: 20, justifyContent: 'center', flex: 1}}>
+                    <InnerText isCode={false}>{props.description}</InnerText>
+                </View>
+            </View>
             <br/>
         </div>
     )

@@ -1,4 +1,5 @@
-import {Text, View} from "react-native";
+import {View} from "react-native";
+import TitleText from "./TitleText";
 
 export default function SectionTitle(props) {
     return (
@@ -9,10 +10,7 @@ export default function SectionTitle(props) {
                 backgroundColor: "#464646"
             }} />
             <View>
-                <Text style={{
-                    fontSize: 50,
-                    fontWeight: 'bold'
-                }}> {props.title} </Text>
+                <TitleText>{props.title}</TitleText>
             </View>
         </View>
     );

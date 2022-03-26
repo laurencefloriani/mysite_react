@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {FiHome} from "react-icons/fi";
-import {Text} from "react-native-web";
+import {Text, View} from "react-native-web";
 import { IconContext } from "react-icons";
 
 const options = [
@@ -30,7 +30,7 @@ export default function Banner(props) {
             case 'Éducation':
                 navigate("/education", {replace: true});
                 break;
-            case 'Experience':
+            case 'Expérience':
                 navigate("/experience", {replace: true});
                 break;
             case 'Activités':
@@ -38,6 +38,8 @@ export default function Banner(props) {
                 break;
             case 'Projets':
                 navigate("/projects", {replace: true});
+                break;
+            default:
                 break;
         }
         setAnchorEl(null);
@@ -93,13 +95,15 @@ export default function Banner(props) {
                             </a>
                         </>:
                         <button onClick={() => navigate("/")} >
-                            <Text style={{fontSize: 45}}>
-                                <IconContext.Provider
-                                    value={{ color: 'black' }}
-                                >
-                                <FiHome />
-                                </IconContext.Provider>
-                            </Text>
+                            <View>
+                                <Text style={{fontSize: 45}}>
+                                    <IconContext.Provider
+                                        value={{ color: 'black' }}
+                                    >
+                                    <FiHome />
+                                    </IconContext.Provider>
+                                </Text>
+                            </View>
                         </button>
                     }
                 </Toolbar>
