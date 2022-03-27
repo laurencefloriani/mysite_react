@@ -11,7 +11,7 @@ export default function Experience() {
             <br/>
             {
                 EXPERIENCES.map((exp) => {
-                    return <Section title={exp.post} appendix={exp.years} description={exp.description} img={exp.img} />;
+                    return <Section key={`experience-${exp.post}`} title={exp.post} appendix={exp.years} description={exp.description} img={exp.img} />;
                 })
             }
         </div>

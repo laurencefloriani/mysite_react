@@ -12,7 +12,7 @@ export default function Section(props) {
                 <View>
                     <img src={props.img} alt={props.img} style={{width: 150, height: 150}}/>
                 </View>
-                <View style={{paddingLeft: 20, justifyContent: 'center', flex: 1}}>
+                <View style={{paddingLeft: 20, paddingRight: 20, flex: 1}}>
                     <InnerText isCode={false}>{props.description}</InnerText>
                 </View>
             </View>

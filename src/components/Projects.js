@@ -65,7 +65,9 @@ export default function Projects() {
                             url={proj.url}
                             langages={Array.from(proj.langages)}
                             description={proj.description}
-                            img={proj.img}/>
+                            img={proj.img}
+                            hasPDF={proj.hasPDF}
+                            pdf={proj.pdf} />
                     } else {
                         return null;
                     }

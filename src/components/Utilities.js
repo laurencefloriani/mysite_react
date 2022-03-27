@@ -71,7 +71,9 @@ export const PROJECTS = [
         description: "Pour mon projet de MAB.1, j'ai implémenté une interface web utilisateur pour le service " +
             "d'algorithmique du département d'informatique de l'UMons. Je me suis occupé du frontend. J'ai implémenté " +
             "plusieurs fonctionnalités pour permettre aux chercheurs de mieux visualiser des données importantes.",
-        img: "phoeg.png"
+        img: "phoeg.png",
+        hasPDF: false,
+        pdf: ""
     },
     {
         name: "Générateur nombre aléatoire",
@@ -80,7 +82,9 @@ export const PROJECTS = [
         langages: new Set(["Python"]),
         description: "Pour le cours de Simulation, j'ai implémenté avec mon binôme un générateur de nombre" +
             " pseudo-aléatoire. Pour en tester l'efficacité, nous avons construit plusieurs tests statistiques.",
-        img: "random.png"
+        img: "random.png",
+        hasPDF: true,
+        pdf: "simulation.pdf"
     },
     {
         name: "Compilateur Dumbo",
@@ -89,7 +93,9 @@ export const PROJECTS = [
         langages: new Set(["Python"]),
         description: "Pour le cours de Compilation, j'ai implémenté un petit compilateur pour un langage appelé " +
             "Dumbo. J'ai employé une librairie d'analyse syntaxique, Lark.",
-        img: "dumbo.png"
+        img: "dumbo.png",
+        hasPDF: true,
+        pdf: "compilation.pdf"
     },
     {
         name: "Séquenceur ADN",
@@ -99,7 +105,9 @@ export const PROJECTS = [
         description: "Dans le cadre du cours d'Algorithmique et bioinformatique, j'ai implémenté avec mon binôme un " +
             "séquenceur d'ADN. Nous avons particulièrement dû faire attention à l'optimisation du projet car il devait " +
             "de grands échantillons de données.",
-        img: "adn.png"
+        img: "adn.png",
+        hasPDF: true,
+        pdf: "bioinfo.pdf"
     },
     {
         name: "Calcul de communautés dans de grands réseaux",
@@ -109,7 +117,9 @@ export const PROJECTS = [
         description: "Pour le cours de Graphes et optimisation combinatoires, j'ai construit un programme permettant de " +
             "regrouper des noeuds d'un graphe en communauté. Il s'agit d'un problème de type NP-difficile, j'ai utilisé " +
             "une approche par métaheuristique. J'ai choisi d'implémenter un recuit simulé.",
-        img: "network.png"
+        img: "network.png",
+        hasPDF: false,
+        pdf: ""
     },
     {
         name: "Création d'un jeu inspiré de Slay",
@@ -119,7 +129,9 @@ export const PROJECTS = [
         description: "Avec mon trinôme, en BAB.2, nous avons implémenté un jeu qui est la copie du jeu Slay. " +
             "Ce premier véritable gros projet m'a permis d'apprendre entre autre à travailler en équipe ainsi " +
             "qu'adopter des bonnes pratiques.",
-        img: "slay.png"
+        img: "slay.png",
+        hasPDF: false,
+        pdf: ""
     },
     {
         name: "Convertisseur d'algèbre relationnelle en requête SQL",
@@ -128,7 +140,9 @@ export const PROJECTS = [
         langages: new Set(["Python", "SQLite3"]),
         description: "Pour le cours de Bases de données 1, j'ai implémenté un petit convertisseur qui permet d'obtenir" +
             " une requête SQL à partir du requête exprimée en algèbre relationnelle.",
-        img: "sql.png"
+        img: "sql.png",
+        hasPDF: false,
+        pdf: ""
     },
 
 ]

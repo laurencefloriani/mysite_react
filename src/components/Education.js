@@ -12,7 +12,7 @@ export default function Education() {
             <br/>
             {
                 EDUCATIONS.map((educ) => {
-                    return <Section title={educ.level} appendix={educ.years} description={educ.description} img={educ.img} />
+                    return <Section key={`education-${educ.level}`} title={educ.level} appendix={educ.years} description={educ.description} img={educ.img} />
                 })
             }
         </div>

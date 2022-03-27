@@ -90,7 +90,7 @@ export default function Banner(props) {
                                 Voyez mon CV
                                 <img src={"right_arrow.png"} width={50} height={20} alt="right_arrow"/>
                             </Typography>
-                            <a href={"/LaurenceDaisyFloriani.pdf"} download>
+                            <a href={"/LaurenceDaisyFloriani.pdf"} target="_blank">
                                 <img src={"logo_cv.png"} alt="logo-cv" className="logo-cv" height={50}/>
                             </a>
                         </>:
