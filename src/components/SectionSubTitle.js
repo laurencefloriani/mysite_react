@@ -5,7 +5,7 @@ import SubTitleText from "./SubTitleText";
 export default function SectionSubTitle(props) {
     return (
         <View style={{flexDirection: 'row', alignItems: 'left'}}>
-            <View>
+            <View style={{paddingLeft: 10}}>
                 <SubTitleText>{props.title} </SubTitleText>
             </View>
             <View style={{
@@ -13,7 +13,7 @@ export default function SectionSubTitle(props) {
                 height: 5,
                 backgroundColor: "#464646"
             }} />
-            <View>
+            <View style={{paddingRight: 10}}>
                 <SubTitleText> {props.appendix}</SubTitleText>
             </View>
         </View>

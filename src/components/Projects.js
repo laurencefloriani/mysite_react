@@ -5,6 +5,8 @@ import Project from "./Project";
 import Select from 'react-select';
 import {useState} from "react";
 import InnerText from "./InnerText";
+import "../styles/Projects.css";
+import {View} from "react-native-web";
 
 export default function Projects() {
     let options = [];
@@ -45,7 +47,9 @@ export default function Projects() {
             {
                 setLangages() // Not work correctly if set in useEffect
             }
-            <InnerText>Sélectionnez des languages ci-après pour voir les projets associés.</InnerText>
+            <View style={{padding: 10}}>
+                <InnerText>Sélectionnez des languages ci-après pour voir les projets associés.</InnerText>
+            </View>
             <Select
                 value={options.filter(obj => selectedValue.includes(obj.value))}
                 isMulti
@@ -54,7 +58,6 @@ export default function Projects() {
                 className="project-select"
                 onChange={handleChange}
             />
-            <br/>
             {
                 PROJECTS.map((proj) => {
                     if (projectContainsLangage(proj)) {
